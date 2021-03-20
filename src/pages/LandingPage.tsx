@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobalContext } from "../context/AppContext";
 import { AnimatedMain } from "../utils/AnimatedMain";
 
 interface LandingPageProps {}
@@ -6,28 +7,34 @@ interface LandingPageProps {}
 // TODO: add bordercol to the theme selectors
 const themeSelections = [
   {
-    name: "light",
+    themeName: "light",
     bgcol: "#fff",
     bordercol: "black",
   },
   {
-    name: "dark",
+    themeName: "dark",
     bgcol: "#000000",
     bordercol: "#000000",
   },
+  // TODO Make Themes using CSS Variables
   {
-    name: "light",
+    themeName: "bluish",
     bgcol: "#476aca",
     bordercol: "red",
   },
   {
-    name: "light",
+    themeName: "greenish",
     bgcol: "#32c552",
     bordercol: "red",
   },
 ];
 
 const LandingPage: React.FC<LandingPageProps> = ({}) => {
+  const { theme: currentTheme, dispatch } = useGlobalContext();
+  const changeTheme = (theme: string) => {
+    dispatch({ type: "CHANGE_THEME", payload: theme });
+  };
+
   return (
     <AnimatedMain className="landing-page">
       <h1>Hello!</h1>
@@ -39,13 +46,15 @@ const LandingPage: React.FC<LandingPageProps> = ({}) => {
               backgroundColor: theme.bgcol,
               border: `2px solid ${theme.bordercol}`,
             };
-            // TODO add Theme selection logic
             return (
               <button
                 style={CSSProps}
                 key={idx}
-                // TODO: Add isActiveTheme to the active theme
-                className={`theme-btn btn`}
+                className={`${
+                  // TODO ADD CSS for the active theme
+                  currentTheme === theme.themeName ? "theme-active" : ""
+                }`}
+                onClick={() => changeTheme(theme.themeName)}
               ></button>
             );
           })}

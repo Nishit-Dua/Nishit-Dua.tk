@@ -1,4 +1,7 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 import { Navbar } from "./components";
+import { useGlobalContext } from "./context/AppContext";
 import {
   AboutPage,
   ContactPage,
@@ -9,6 +12,14 @@ import {
 import { LazyComponentLoader } from "./utils/LazyComponentLoader";
 
 function App() {
+  const { dispatch } = useGlobalContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    dispatch({ type: "SET_PATH", payload: location.pathname });
+  }, [location.pathname, dispatch]);
+
+  console.log(location);
   return (
     <>
       <Navbar />

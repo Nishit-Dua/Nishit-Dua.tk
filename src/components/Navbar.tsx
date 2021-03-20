@@ -1,6 +1,7 @@
-import React from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context/AppContext";
 
 interface NavbarProps {}
 
@@ -24,6 +25,7 @@ const pages = [
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({}) => {
+  const { currentPage } = useGlobalContext();
   return (
     <nav>
       <div className="nav-max">
@@ -34,7 +36,14 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
           {pages.map((page, idx) => {
             return (
               <li key={idx}>
-                <Link to={page.page}>{page.name}</Link>
+                <Link
+                  to={page.page}
+                  className={`${
+                    page.page === currentPage ? "page-active" : ""
+                  }`}
+                >
+                  {page.name}
+                </Link>
               </li>
             );
           })}

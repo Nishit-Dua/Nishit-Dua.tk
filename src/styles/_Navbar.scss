@@ -73,6 +73,11 @@ nav {
           background-color: aliceblue;
           transition: all 0.2s ease-in-out;
         }
+
+        &.page-active {
+          // TODO style the Active Class !!
+          color: red;
+        }
       }
     }
   }
