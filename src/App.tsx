@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./components";
+import {
+  AboutPage,
+  ContactPage,
+  HomePage,
+  LandingPage,
+  ProjectsPage,
+} from "./pages";
+import { LazyComponentLoader } from "./utils/LazyComponentLoader";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <LazyComponentLoader path="/" pageToRender={LandingPage} />
+      <LazyComponentLoader path="/home" pageToRender={HomePage} />
+      <LazyComponentLoader path="/about" pageToRender={AboutPage} />
+      <LazyComponentLoader path="/contact" pageToRender={ContactPage} />
+      <LazyComponentLoader path="/projects" pageToRender={ProjectsPage} />
+    </>
   );
 }
 

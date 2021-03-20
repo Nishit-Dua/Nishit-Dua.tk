@@ -1,0 +1,47 @@
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  .theme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .theme-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        box-sizing: content-box;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
