@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { PageAnimation } from "../utils/PageAnimations";
+import { AnimatedMain } from "../utils/AnimatedMain";
 
 interface LandingPageProps {}
 
@@ -30,12 +29,7 @@ const themeSelections = [
 
 const LandingPage: React.FC<LandingPageProps> = ({}) => {
   return (
-    <motion.main
-      className="landing-page"
-      variants={PageAnimation}
-      initial="out"
-      animate="in"
-    >
+    <AnimatedMain className="landing-page">
       <h1>Hello!</h1>
       <div className="theme-container">
         <p>Select your preffered theme!</p>
@@ -57,7 +51,7 @@ const LandingPage: React.FC<LandingPageProps> = ({}) => {
           })}
         </div>
       </div>
-    </motion.main>
+    </AnimatedMain>
   );
 };
 

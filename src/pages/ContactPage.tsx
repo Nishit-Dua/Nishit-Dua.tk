@@ -1,19 +1,9 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { PageAnimation } from "../utils/PageAnimations";
+import { AnimatedMain } from "../utils/AnimatedMain";
 
 interface ContactPageProps {}
 
 const ContactPage: React.FC<ContactPageProps> = ({}) => {
-  return (
-    <motion.main
-      variants={PageAnimation}
-      initial="out"
-      animate="in"
-      className="start-testing"
-    >
-      Contact Page
-    </motion.main>
-  );
+  return <AnimatedMain className="start-testing">Contact Page</AnimatedMain>;
 };
 export default ContactPage;
