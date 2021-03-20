@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+}
+
+// ScrollBar
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #719190;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 7px 30px #c2c2c2;
+}
+
+// ScrollBar
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button:focus {
+  outline: none;
+}
+
+@import "./LandingPage";
+@import "./Navbar";
+@import "./Pages";
