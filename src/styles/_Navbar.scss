@@ -75,7 +75,9 @@ nav {
 
         &.page-active {
           // TODO style the Active Class !!
-          color: red;
+          border: 1px solid aliceblue;
+          border-radius: 5px;
+          box-shadow: 3px 3px 5px rgb(186, 192, 197);
         }
       }
     }

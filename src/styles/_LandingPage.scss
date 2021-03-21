@@ -39,7 +39,12 @@
         }
 
         &:hover {
+          transform: scale(1.1);
+        }
+
+        &.theme-active {
           transform: scale(1.2);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
         }
       }
     }
