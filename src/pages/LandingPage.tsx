@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGlobalContext } from "../context/AppContext";
 import { AnimatedMain } from "../utils/AnimatedMain";
 
@@ -35,11 +35,15 @@ const LandingPage: React.FC<LandingPageProps> = ({}) => {
     dispatch({ type: "CHANGE_THEME", payload: theme });
   };
 
+  useEffect(() => {
+    document.documentElement.classList.value = currentTheme;
+  }, [currentTheme]);
+
   return (
     <AnimatedMain className="landing-page">
       <h1>Hello!</h1>
       <div className="theme-container">
-        <p>Select your preffered theme!</p>
+        <p>Choose a theme!</p>
         <div className="theme-box">
           {themeSelections.map((theme, idx) => {
             const CSSProps: React.CSSProperties = {

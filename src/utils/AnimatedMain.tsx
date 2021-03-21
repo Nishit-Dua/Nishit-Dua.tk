@@ -16,6 +16,7 @@ export const AnimatedMain: React.FC<AnimatedMainProps> = ({
       variants={PageAnimation}
       initial="out"
       animate="in"
+      exit="exit"
     >
       {children}
     </motion.main>
