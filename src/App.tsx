@@ -7,7 +7,7 @@ import { useGlobalContext } from "./context/AppContext";
 import {
   AboutPage,
   ContactPage,
-  HomePage,
+  GoofPage,
   LandingPage,
   ProjectsPage,
 } from "./pages";
@@ -21,8 +21,8 @@ const pagesAndRoute = [
     page: LandingPage,
   },
   {
-    route: "/home",
-    page: HomePage,
+    route: "/goofy",
+    page: GoofPage,
   },
   {
     route: "/about",

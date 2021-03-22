@@ -11,8 +11,8 @@ const pages = [
     page: "/about",
   },
   {
-    name: "home",
-    page: "/home",
+    name: "Who?",
+    page: "/goofy",
   },
   {
     name: "projects",

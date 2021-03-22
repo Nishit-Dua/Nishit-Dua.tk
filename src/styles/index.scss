@@ -16,7 +16,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background: #719190;
-  border-radius: 15px;
+  // border-radius: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -49,6 +49,7 @@ button:focus {
   outline: none;
 }
 
+@import "./GoofPage";
 @import "./LandingPage";
 @import "./Navbar";
 @import "./Pages";
