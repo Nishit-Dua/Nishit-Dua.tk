@@ -39,13 +39,13 @@ const contactItterableShit = [
 interface ContactPageProps {}
 
 const ContactPage: React.FC<ContactPageProps> = () => {
-  const cssStyling = (): React.CSSProperties => {
-    return {
-      "&:hover": {
-        background: "#ff0000",
-      },
-    };
-  };
+  // const cssStyling = (): React.CSSProperties => {
+  //   return {
+  //     "&:hover": {
+  //       background: "#ff0000",
+  //     },
+  //   };
+  // };
 
   return (
     <AnimatedMain className="contact-page">
@@ -63,9 +63,7 @@ const ContactPage: React.FC<ContactPageProps> = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="icon-box" style={cssStyling()}>
-                {item.icon}
-              </div>
+              <div className="icon-box">{item.icon}</div>
               <h3>{item.heading}</h3>
               <p>{item.content}</p>
             </a>

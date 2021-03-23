@@ -13,7 +13,7 @@ import {
   ProjectsPage,
 } from "./pages";
 
-// !Goodbye Sweet Prince :(
+// ?Goodbye Sweet Prince :(
 // import { LazyComponentLoader } from "./utils/LazyComponentLoader";
 
 const pagesAndRoute = [

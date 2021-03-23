@@ -1,5 +1,5 @@
 import { Squash as Hamburger } from "hamburger-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/AppContext";
 
@@ -25,7 +25,8 @@ export const pages = [
 ];
 
 export const Navbar: React.FC<NavbarProps> = () => {
-  const { currentPage, dispatch } = useGlobalContext();
+  const { currentPage, dispatch, isLibraryOpen } = useGlobalContext();
+
   return (
     <nav>
       <div className="nav-max">
@@ -48,7 +49,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
             );
           })}
         </ul>
-        <Hamburger onToggle={() => dispatch({ type: "TOGGLE_LIBRARY" })} />
+        <Hamburger
+          toggled={isLibraryOpen}
+          onToggle={() => {
+            dispatch({
+              type: "TOGGLE_LIBRARY",
+            });
+          }}
+        />
       </div>
     </nav>
   );

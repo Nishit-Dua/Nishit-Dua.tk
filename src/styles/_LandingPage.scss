@@ -7,6 +7,7 @@
 
   h1 {
     font-size: 10rem;
+    letter-spacing: 5px;
     margin-bottom: 3rem;
     text-shadow: 5px 5px rgb(255, 0, 0), 10px 10px rgb(89, 0, 255),
       15px 15px rgb(90, 192, 7);
@@ -49,6 +50,63 @@
           // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 8rem;
+    }
+    .theme-container {
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+      }
+      .theme-box button {
+        height: 1.7rem;
+        width: 1.7rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &.theme-active {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+      // letter-spacing: 7px;
+      text-shadow: 3px 3px rgb(255, 0, 0), 7px 7px rgb(89, 0, 255),
+        11px 11px rgb(90, 192, 7);
+    }
+    .theme-container {
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      .theme-box button {
+        height: 1.3rem;
+        width: 1.3rem;
+        &:not(:last-child) {
+          margin-right: 1.2rem;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+        &.theme-active {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 5rem;
+      text-shadow: 2px 2px rgb(255, 0, 0), 4px 4px rgb(89, 0, 255),
+        6px 6px rgb(90, 192, 7);
     }
   }
 }

@@ -41,6 +41,7 @@ li {
 }
 
 html {
+  font-size: 16px;
   font-family: "Lato", sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -48,7 +49,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: rgb(250, 250, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 button:focus {
