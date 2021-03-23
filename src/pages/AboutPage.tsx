@@ -4,10 +4,10 @@ import me2 from "../images/f.jpg";
 import { AnimatedMain } from "../utils/AnimatedMain";
 interface AboutPageProps {}
 
-const AboutPage: React.FC<AboutPageProps> = ({}) => {
+const AboutPage: React.FC<AboutPageProps> = () => {
   // TODO ass CV link
   return (
-    <AnimatedMain className=" about-page">
+    <AnimatedMain className="about-page">
       <div className="img-container">
         <img src={me2} alt="me" />
       </div>
@@ -33,7 +33,7 @@ const AboutPage: React.FC<AboutPageProps> = ({}) => {
           <a href="https://www.google.com" target="_blank" rel="noreferrer">
             CV Here.
           </a>{" "}
-          or reach me on my email <a href="nishitdua175@gmail.com">email :D</a>
+          or reach me on my <a href="nishitdua175@gmail.com">email :D</a>
         </p>
       </div>
     </AnimatedMain>

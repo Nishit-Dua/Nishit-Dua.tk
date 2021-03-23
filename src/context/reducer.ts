@@ -15,9 +15,9 @@ export interface ReturnValue extends StateType {
 export const reducer = (state: StateType, action: DispatchType): StateType => {
   switch (action.type) {
     case "SET_PATH":
-      console.log(state.isLibraryOpen);
       return { ...state, currentPage: action.payload, isLibraryOpen: false };
     case "CHANGE_THEME":
+      localStorage.setItem("site-theme", action.payload);
       return { ...state, theme: action.payload };
     case "TOGGLE_LIBRARY":
       return { ...state, isLibraryOpen: !state.isLibraryOpen };

@@ -3,9 +3,15 @@ import { reducer, ReturnValue } from "./reducer";
 
 const AppContext = createContext<ReturnValue | null>(null);
 
+const loadThemeFromLocalStorage = () => {
+  const theme = localStorage.getItem("site-theme");
+  if (theme) return theme;
+  else return "light";
+};
+
 export const initialState = {
   currentPage: "/",
-  theme: "light",
+  theme: loadThemeFromLocalStorage(),
   isLibraryOpen: false,
 };
 

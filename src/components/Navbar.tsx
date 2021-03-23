@@ -24,7 +24,7 @@ export const pages = [
   },
 ];
 
-export const Navbar: React.FC<NavbarProps> = ({}) => {
+export const Navbar: React.FC<NavbarProps> = () => {
   const { currentPage, dispatch } = useGlobalContext();
   return (
     <nav>

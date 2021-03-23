@@ -47,7 +47,6 @@ function App() {
     dispatch({ type: "SET_PATH", payload: location.pathname });
   }, [location.pathname, dispatch]);
 
-  console.log(location);
   return (
     <>
       <Navbar />

@@ -5,7 +5,7 @@ import { pages } from "./Navbar";
 
 interface LibraryProps {}
 
-export const Library: React.FC<LibraryProps> = ({}) => {
+export const Library: React.FC<LibraryProps> = () => {
   const { isLibraryOpen, currentPage } = useGlobalContext();
   return (
     <section className={`library ${isLibraryOpen ? "active" : ""}`}>

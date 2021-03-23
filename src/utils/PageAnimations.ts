@@ -13,8 +13,9 @@ export const PageAnimation: Variants = {
   out: {
     opacity: 0,
     x: "-100%",
-    scale: 0.3,
+    scale: 0.5,
   },
+
   exit: {
     opacity: 0,
     x: "100%",

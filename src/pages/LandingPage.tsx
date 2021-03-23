@@ -29,7 +29,7 @@ const themeSelections = [
   },
 ];
 
-const LandingPage: React.FC<LandingPageProps> = ({}) => {
+const LandingPage: React.FC<LandingPageProps> = () => {
   const { theme: currentTheme, dispatch } = useGlobalContext();
   const changeTheme = (theme: string) => {
     dispatch({ type: "CHANGE_THEME", payload: theme });
