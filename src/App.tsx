@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Route, useLocation } from "react-router";
 import { Switch } from "react-router-dom";
 import { Navbar } from "./components";
+import { Library } from "./components/Library";
 import { useGlobalContext } from "./context/AppContext";
 import {
   AboutPage,
@@ -50,6 +51,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Library />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={LandingPage} />

@@ -6,6 +6,7 @@ const AppContext = createContext<ReturnValue | null>(null);
 export const initialState = {
   currentPage: "/",
   theme: "light",
+  isLibraryOpen: false,
 };
 
 const AppProvider: React.FC = ({ children }) => {

@@ -5,7 +5,7 @@ type DispatchType = {
   payload?: any;
 };
 
-type Action = "SET_PATH" | "CHANGE_THEME";
+type Action = "SET_PATH" | "CHANGE_THEME" | "TOGGLE_LIBRARY";
 type StateType = typeof initialState;
 
 export interface ReturnValue extends StateType {
@@ -15,9 +15,12 @@ export interface ReturnValue extends StateType {
 export const reducer = (state: StateType, action: DispatchType): StateType => {
   switch (action.type) {
     case "SET_PATH":
-      return { ...state, currentPage: action.payload };
+      console.log(state.isLibraryOpen);
+      return { ...state, currentPage: action.payload, isLibraryOpen: false };
     case "CHANGE_THEME":
       return { ...state, theme: action.payload };
+    case "TOGGLE_LIBRARY":
+      return { ...state, isLibraryOpen: !state.isLibraryOpen };
     default:
       return state;
   }

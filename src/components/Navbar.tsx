@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context/AppContext";
 
 interface NavbarProps {}
 
-const pages = [
+export const pages = [
   {
     name: "about",
     page: "/about",
@@ -25,7 +25,7 @@ const pages = [
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({}) => {
-  const { currentPage } = useGlobalContext();
+  const { currentPage, dispatch } = useGlobalContext();
   return (
     <nav>
       <div className="nav-max">
@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
             );
           })}
         </ul>
-        <Hamburger />
+        <Hamburger onToggle={() => dispatch({ type: "TOGGLE_LIBRARY" })} />
       </div>
     </nav>
   );

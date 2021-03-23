@@ -4,11 +4,11 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 10000;
-  background: #000;
+  z-index: 30;
+  background-color: #000;
   color: white;
 
-  box-shadow: 0px 5px 10px rgba(0, 40, 77, 0.562);
+  // box-shadow: 0px 5px 10px rgba(0, 40, 77, 0.562);
 
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -90,5 +90,6 @@ nav {
 
   .hamburger-react {
     display: none;
+    z-index: 25;
   }
 }
