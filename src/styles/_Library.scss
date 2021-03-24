@@ -11,18 +11,18 @@
   align-items: center;
   justify-content: center;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
 
   &.active {
     display: flex;
     transform: translateX(0);
     opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   nav {

@@ -39,14 +39,6 @@ const contactItterableShit = [
 interface ContactPageProps {}
 
 const ContactPage: React.FC<ContactPageProps> = () => {
-  // const cssStyling = (): React.CSSProperties => {
-  //   return {
-  //     "&:hover": {
-  //       background: "#ff0000",
-  //     },
-  //   };
-  // };
-
   return (
     <AnimatedMain className="contact-page">
       <div className="head">

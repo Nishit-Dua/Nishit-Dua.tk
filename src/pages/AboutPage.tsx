@@ -27,7 +27,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             </a>
             . I am Majoring with a BE (Hons.) in Electronics and an Msc (Hons.)
             in Biology. I am a developer and I love to try and use different
-            technologies and make weird projects! I am currently learning Full
+            technologies and making weird projects! I am currently learning Full
             stack web and app develoment. I have previously dabbled in the
             domain of Machine learning using Python, Tensorflow and keras. You
             can know more about who am i as a person
@@ -44,18 +44,17 @@ const AboutPage: React.FC<AboutPageProps> = () => {
           <img src={me} alt="me" />
         </div>
         <div className="about-container">
-          <h1>Who am I?</h1>
+          <h1>Who am I, no really?</h1>
 
           <p>
-            Hi, I am Nishit Dua, a 20 year old GoofBall. I am very much into
-            internet and meme culture. I also Like World History, studying about
-            different cultures, and Human Languages{" "}
-            <span className="emojicon">:D</span> I am an extrovert, I like
-            making friends and taking to other people, I also like to code for
-            fun! I am currently Facinated with world economics and the concept
-            of value and money, I also enjoy watching anime. Weird combination
-            of tastes I know. but it's good to be unique{" "}
-            <span className="emojicon">:3</span>
+            I am 20 year old and a GoofBall. I am very much into internet and
+            meme culture. I also Like World History, studying about different
+            cultures, and Human Languages <span className="emojicon">:D</span> I
+            am an extrovert, I like making friends and taking to other people, I
+            also like to code for fun! I am currently Facinated with world
+            economics and the concept of value and money, I also enjoy watching
+            anime. Weird combination of tastes I know. but it's good to be
+            unique <span className="emojicon">:3</span>
           </p>
           <div className="br" />
           <p></p>

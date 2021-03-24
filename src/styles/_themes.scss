@@ -2,12 +2,54 @@
   --main-bg: white;
   --main-text: black;
 
+  --select-bg: rgb(231, 231, 231);
+  --select-text: rgb(56, 56, 56);
+  //Nav Bar
+  --nav-logo-shadow: 2px 2px 10px rgba(128, 128, 128, 0.452);
+  --nav-box-shadow: 3px 3px 5px rgb(168, 184, 197);
+  --nav-box-border: 1px solid aliceblue;
   --nav-underline: rgb(51, 51, 51);
+  --nav-shadow: 0px 2px 10px rgba(0, 40, 77, 0.562);
 
+  //landing Page
   --heading-shadow-cl1: red;
   --heading-shadow-cl2: rgb(89, 0, 255);
   --heading-shadow-cl3: rgb(90, 192, 7);
 
+  //About Page
+  --emojicon: brown;
+  --emojicon-hover: rgb(201, 63, 63);
+
+  //contact page
   --contact-boxes-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
   --contact-boxes-shadow-hover: 3px 3px 8px rgba(0, 0, 0, 0.514);
+  --contact-subtitle-color: grey;
+}
+
+.dark {
+  --main-bg: rgb(27, 27, 27);
+  --main-text: rgb(243, 243, 243);
+
+  --select-bg: rgb(39, 39, 39);
+  --select-text: rgb(216, 216, 216);
+  //Nav Bar
+  --nav-logo-shadow: 2px 2px 10px rgba(77, 255, 246, 0.26);
+  --nav-box-shadow: 3px 3px 5px rgb(168, 184, 197);
+  --nav-box-border: 1px solid aliceblue;
+  --nav-underline: rgb(226, 226, 226);
+  --nav-shadow: 0px 2px 10px rgba(114, 167, 216, 0.336);
+
+  //landing Page
+  --heading-shadow-cl1: red;
+  --heading-shadow-cl2: rgb(89, 0, 255);
+  --heading-shadow-cl3: rgb(90, 192, 7);
+
+  //About Page
+  --emojicon: rgb(228, 64, 64);
+  --emojicon-hover: rgb(255, 94, 94);
+
+  //contact page
+  --contact-boxes-shadow: 2px 2px 5px rgba(139, 139, 139, 0.397);
+  --contact-boxes-shadow-hover: 3px 3px 8px rgba(136, 136, 136, 0.514);
+  --contact-subtitle-color: grey;
 }

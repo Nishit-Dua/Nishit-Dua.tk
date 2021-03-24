@@ -11,8 +11,8 @@
 // ScrollBar
 
 ::selection {
-  background-color: rgb(24, 24, 24);
-  color: aliceblue;
+  background-color: var(--select-text);
+  color: var(--select-bg);
 }
 
 ::-webkit-scrollbar {
@@ -33,8 +33,8 @@
 // ScrollBar
 
 :root {
-  --theme-transition: color 0.2 ease-in-out, background-color 0.2 ease-in-out,
-    text-shadow 0.2 ease-in-out;
+  --theme-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    text-shadow 0.2s ease-in-out;
 }
 
 .page {
@@ -60,6 +60,13 @@ html {
 
 body {
   min-height: 100vh;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  transition: var(--theme-transition);
+}
+
+.main-page {
+  transition: var(--theme-transition);
   background-color: var(--main-bg);
 }
 

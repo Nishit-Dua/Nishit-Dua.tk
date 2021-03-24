@@ -8,7 +8,8 @@ nav {
   background-color: var(--main-bg);
   color: var(--main-text);
 
-  // box-shadow: 0px 5px 10px rgba(0, 40, 77, 0.562);
+  transition: var(--theme-transition);
+  box-shadow: var(--nav-shadow);
 
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -32,7 +33,7 @@ nav {
     font-weight: 300;
     text-transform: capitalize;
 
-    text-shadow: 2px 2px 10px rgba(128, 128, 128, 0.452);
+    text-shadow: var(--nav-logo-shadow);
 
     cursor: pointer;
   }
@@ -80,9 +81,9 @@ nav {
         }
 
         &.page-active {
-          border: 1px solid aliceblue;
+          border: var(--nav-box-border);
           border-radius: 5px;
-          box-shadow: 3px 3px 5px rgb(186, 192, 197);
+          box-shadow: var(--nav-box-shadow);
         }
       }
     }

@@ -38,7 +38,7 @@
         height: var(--size);
         width: var(--size);
         border-radius: 20%;
-        background: rgb(59, 59, 59);
+        background: rgb(46, 46, 46);
         margin-bottom: 1rem;
         box-shadow: var(--contact-boxes-shadow);
         transition: all 0.1s ease-in-out;
@@ -46,7 +46,7 @@
         &:hover {
           transform: scale(1.05);
           box-shadow: var(--contact-boxes-shadow-hover);
-          background: rgb(36, 36, 36);
+          background: rgb(29, 29, 29);
         }
 
         svg {
@@ -61,7 +61,7 @@
       }
       p {
         font-size: 0.8rem;
-        color: grey;
+        color: var(--contact-subtitle-color);
       }
     }
   }

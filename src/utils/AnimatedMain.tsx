@@ -12,7 +12,7 @@ export const AnimatedMain: React.FC<AnimatedMainProps> = ({
 }) => {
   return (
     <motion.main
-      className={className}
+      className={`main-page ${className}`}
       variants={PageAnimation}
       initial="out"
       animate="in"
