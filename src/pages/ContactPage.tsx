@@ -11,7 +11,7 @@ const contactItterableShit = [
     content: "nishitdua175@gmail.com",
   },
   {
-    link: "https://twitter.com/_lemark_",
+    link: "https://youtu.be/dQw4w9WgXcQ",
     icon: <FaFilePdf />,
     heading: "My CV",
     content: "Nishit Dua",

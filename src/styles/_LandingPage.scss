@@ -15,6 +15,7 @@
       letter-spacing: 5px;
       text-shadow: 5px 5px var(--heading-shadow-cl1),
         10px 10px var(--heading-shadow-cl2), 15px 15px var(--heading-shadow-cl3);
+      transition: var(--theme-transition);
     }
   }
 

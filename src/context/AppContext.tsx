@@ -6,7 +6,7 @@ const AppContext = createContext<ReturnValue | null>(null);
 const loadThemeFromLocalStorage = () => {
   const theme = localStorage.getItem("site-theme");
   if (theme) return theme;
-  else return "light";
+  else return "solaized-light";
 };
 
 export const initialState = {

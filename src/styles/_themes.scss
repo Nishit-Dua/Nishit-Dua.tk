@@ -4,6 +4,11 @@
 
   --select-bg: rgb(231, 231, 231);
   --select-text: rgb(56, 56, 56);
+
+  //scroll Bar
+  --scroll-bg: #c2c2c2;
+  --scroll-thumb: #719190;
+
   //Nav Bar
   --nav-logo-shadow: 2px 2px 10px rgba(128, 128, 128, 0.452);
   --nav-box-shadow: 3px 3px 5px rgb(168, 184, 197);
@@ -13,14 +18,16 @@
 
   //landing Page
   --heading-shadow-cl1: red;
-  --heading-shadow-cl2: rgb(89, 0, 255);
-  --heading-shadow-cl3: rgb(90, 192, 7);
+  --heading-shadow-cl2: rgb(110, 32, 255);
+  --heading-shadow-cl3: rgb(108, 224, 12);
 
   //About Page
   --emojicon: brown;
   --emojicon-hover: rgb(201, 63, 63);
 
   //contact page
+  --contact-box-color: rgb(46, 46, 46);
+  --contact-box-color-hover: rgb(29, 29, 29);
   --contact-boxes-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
   --contact-boxes-shadow-hover: 3px 3px 8px rgba(0, 0, 0, 0.514);
   --contact-subtitle-color: grey;
@@ -32,6 +39,11 @@
 
   --select-bg: rgb(39, 39, 39);
   --select-text: rgb(216, 216, 216);
+
+  //scroll Bar
+  --scroll-bg: #353535;
+  --scroll-thumb: #5bb4b4;
+
   //Nav Bar
   --nav-logo-shadow: 2px 2px 10px rgba(77, 255, 246, 0.26);
   --nav-box-shadow: 3px 3px 5px rgb(168, 184, 197);
@@ -45,11 +57,83 @@
   --heading-shadow-cl3: rgb(90, 192, 7);
 
   //About Page
-  --emojicon: rgb(228, 64, 64);
-  --emojicon-hover: rgb(255, 94, 94);
+  --emojicon: rgb(67, 149, 255);
+  --emojicon-hover: rgb(94, 204, 255);
 
   //contact page
+  --contact-box-color: rgb(61, 61, 61);
+  --contact-box-color-hover: rgb(48, 48, 48);
   --contact-boxes-shadow: 2px 2px 5px rgba(139, 139, 139, 0.397);
   --contact-boxes-shadow-hover: 3px 3px 8px rgba(136, 136, 136, 0.514);
   --contact-subtitle-color: grey;
+}
+
+.solaized {
+  --main-bg: #073642;
+  --main-text: #fdf6e3;
+
+  --select-bg: #073642;
+  --select-text: #fdf6e3;
+
+  //scroll Bar
+  --scroll-bg: #353535;
+  --scroll-thumb: #5bb4b4;
+
+  //Nav Bar
+  --nav-logo-shadow: 2px 2px 10px #fdf6e32d;
+  --nav-box-shadow: 3px 3px 5px #fdf6e388;
+  --nav-box-border: 1px solid aliceblue;
+  --nav-underline: #e0d7bc;
+  --nav-shadow: 0px 2px 10px #fdf6e37a;
+
+  //landing Page
+  --heading-shadow-cl1: #dc322f;
+  --heading-shadow-cl2: #268bd2;
+  --heading-shadow-cl3: #859900;
+
+  //About Page
+  --emojicon: #ff3d9b;
+  --emojicon-hover: #dc322f;
+
+  //contact page
+  --contact-box-color: rgb(143, 83, 0);
+  --contact-box-color-hover: rgb(180, 105, 0);
+  --contact-boxes-shadow: 2px 2px 5px rgba(139, 139, 139, 0.397);
+  --contact-boxes-shadow-hover: 3px 3px 8px rgba(136, 136, 136, 0.514);
+  --contact-subtitle-color: #a19d91;
+}
+
+.solaized-light {
+  --main-bg: #fdf6e3;
+  --main-text: #073642;
+
+  --select-bg: #fdf6e3;
+  --select-text: #073642;
+
+  //scroll Bar
+  --scroll-bg: #353535;
+  --scroll-thumb: #5bb4b4;
+
+  //Nav Bar
+  --nav-logo-shadow: 2px 2px 10px rgba(77, 255, 246, 0.26);
+  --nav-box-shadow: 3px 3px 5px rgb(168, 184, 197);
+  --nav-box-border: 1px solid #004a5a;
+  --nav-underline: rgb(226, 226, 226);
+  --nav-shadow: 0px 2px 10px rgba(114, 167, 216, 0.336);
+
+  //landing Page
+  --heading-shadow-cl1: #e7201c;
+  --heading-shadow-cl2: #1c8ee0;
+  --heading-shadow-cl3: #b2cc06;
+
+  //About Page
+  --emojicon: #ff3d9b;
+  --emojicon-hover: #dc322f;
+
+  //contact page
+  --contact-box-color: #003a47;
+  --contact-box-color-hover: #006379;
+  --contact-boxes-shadow: 2px 2px 5px rgba(139, 139, 139, 0.397);
+  --contact-boxes-shadow-hover: 3px 3px 8px rgba(136, 136, 136, 0.514);
+  --contact-subtitle-color: #a19d91;
 }

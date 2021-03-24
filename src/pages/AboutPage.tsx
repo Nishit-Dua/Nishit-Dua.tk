@@ -30,9 +30,13 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             technologies and making weird projects! I am currently learning Full
             stack web and app develoment. I have previously dabbled in the
             domain of Machine learning using Python, Tensorflow and keras. You
-            can know more about who am i as a person
-            <Link to="/goofy"> Here,</Link> or check out My{" "}
-            <a href="https://www.google.com" target="_blank" rel="noreferrer">
+            can know more about who am i as a person down below 😊 or check out
+            My{" "}
+            <a
+              href="https://youtu.be/dQw4w9WgXcQ"
+              target="_blank"
+              rel="noreferrer"
+            >
               CV Here.
             </a>{" "}
             or reach me on my <a href="nishitdua175@gmail.com">email :D</a>
@@ -40,7 +44,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
         </div>
       </section>
       <section className="about-page">
-        <div className="img-container">
+        <div className="img-container mt-l">
           <img src={me} alt="me" />
         </div>
         <div className="about-container">

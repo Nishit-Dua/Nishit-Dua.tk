@@ -31,13 +31,21 @@ const pagesAndRoute = [
 ];
 
 function App() {
-  const { dispatch, theme } = useGlobalContext();
+  const { dispatch, theme, isLibraryOpen } = useGlobalContext();
   const location = useLocation();
 
   useEffect(() => {
-    document.documentElement.classList.value = theme;
     dispatch({ type: "SET_PATH", payload: location.pathname });
-  }, [location.pathname, dispatch, theme]);
+  }, [location.pathname, dispatch]);
+
+  useEffect(() => {
+    document.documentElement.classList.value = theme;
+  }, [theme]);
+
+  useEffect(() => {
+    if (isLibraryOpen) document.body.classList.add("lib-active");
+    else document.body.classList.remove("lib-active");
+  }, [isLibraryOpen]);
 
   return (
     <>

@@ -9,7 +9,7 @@ const themeSelections = [
   {
     themeName: "light",
     bgcol: "#fff",
-    bordercol: "black",
+    bordercol: "#666",
   },
   {
     themeName: "dark",
@@ -18,14 +18,14 @@ const themeSelections = [
   },
   // TODO Make Themes using CSS Variables
   {
-    themeName: "bluish",
-    bgcol: "#476aca",
-    bordercol: "red",
+    themeName: "solaized",
+    bgcol: "#073642",
+    bordercol: "#85744e",
   },
   {
-    themeName: "greenish",
-    bgcol: "#32c552",
-    bordercol: "red",
+    themeName: "solaized-light",
+    bgcol: "#fdf6e3",
+    bordercol: "#1488a5",
   },
 ];
 
