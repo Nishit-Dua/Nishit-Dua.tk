@@ -1,5 +1,5 @@
 import { Squash as Hamburger } from "hamburger-react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/AppContext";
 
@@ -7,15 +7,15 @@ interface NavbarProps {}
 
 export const pages = [
   {
-    name: "about",
+    name: "Home",
+    page: "/",
+  },
+  {
+    name: "About",
     page: "/about",
   },
   {
-    name: "Who?",
-    page: "/goofy",
-  },
-  {
-    name: "projects",
+    name: "Projects",
     page: "/projects",
   },
   {

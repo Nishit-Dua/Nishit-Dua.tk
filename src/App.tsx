@@ -5,13 +5,7 @@ import { Switch } from "react-router-dom";
 import { Navbar } from "./components";
 import { Library } from "./components/Library";
 import { useGlobalContext } from "./context/AppContext";
-import {
-  AboutPage,
-  ContactPage,
-  GoofPage,
-  LandingPage,
-  ProjectsPage,
-} from "./pages";
+import { AboutPage, ContactPage, LandingPage, ProjectsPage } from "./pages";
 
 // ?Goodbye Sweet Prince :(
 // import { LazyComponentLoader } from "./utils/LazyComponentLoader";
@@ -21,10 +15,7 @@ const pagesAndRoute = [
     route: "/",
     page: LandingPage,
   },
-  {
-    route: "/goofy",
-    page: GoofPage,
-  },
+
   {
     route: "/about",
     page: AboutPage,
@@ -40,12 +31,13 @@ const pagesAndRoute = [
 ];
 
 function App() {
-  const { dispatch } = useGlobalContext();
+  const { dispatch, theme } = useGlobalContext();
   const location = useLocation();
 
   useEffect(() => {
+    document.documentElement.classList.value = theme;
     dispatch({ type: "SET_PATH", payload: location.pathname });
-  }, [location.pathname, dispatch]);
+  }, [location.pathname, dispatch, theme]);
 
   return (
     <>

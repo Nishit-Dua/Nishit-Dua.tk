@@ -5,12 +5,17 @@
   align-items: center;
   justify-content: center;
 
-  h1 {
-    font-size: 10rem;
-    letter-spacing: 5px;
+  .head {
     margin-bottom: 3rem;
-    text-shadow: 5px 5px rgb(255, 0, 0), 10px 10px rgb(89, 0, 255),
-      15px 15px rgb(90, 192, 7);
+    p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 10rem;
+      letter-spacing: 5px;
+      text-shadow: 5px 5px var(--heading-shadow-cl1),
+        10px 10px var(--heading-shadow-cl2), 15px 15px var(--heading-shadow-cl3);
+    }
   }
 
   .theme-container {
@@ -54,8 +59,10 @@
   }
 
   @media screen and (max-width: 1000px) {
-    h1 {
-      font-size: 8rem;
+    .head {
+      h1 {
+        font-size: 8rem;
+      }
     }
     .theme-container {
       p {
@@ -75,12 +82,14 @@
     }
   }
   @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 6rem;
+    .head {
       margin-bottom: 2rem;
-      // letter-spacing: 7px;
-      text-shadow: 3px 3px rgb(255, 0, 0), 7px 7px rgb(89, 0, 255),
-        11px 11px rgb(90, 192, 7);
+      h1 {
+        font-size: 6rem;
+        // letter-spacing: 7px;
+        text-shadow: 3px 3px var(--heading-shadow-cl1),
+          7px 7px var(--heading-shadow-cl2), 11px 11px var(--heading-shadow-cl3);
+      }
     }
     .theme-container {
       p {
@@ -105,8 +114,8 @@
   @media screen and (max-width: 500px) {
     h1 {
       font-size: 5rem;
-      text-shadow: 2px 2px rgb(255, 0, 0), 4px 4px rgb(89, 0, 255),
-        6px 6px rgb(90, 192, 7);
+      text-shadow: 2px 2px var(--heading-shadow-cl1),
+        4px 4px var(--heading-shadow-cl2), 6px 6px var(--heading-shadow-cl3);
     }
   }
 }

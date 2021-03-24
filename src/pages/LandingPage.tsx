@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useGlobalContext } from "../context/AppContext";
 import { AnimatedMain } from "../utils/AnimatedMain";
 
@@ -13,8 +13,8 @@ const themeSelections = [
   },
   {
     themeName: "dark",
-    bgcol: "#000000",
-    bordercol: "#000000",
+    bgcol: "#2b2b2b",
+    bordercol: "#cfcfcf",
   },
   // TODO Make Themes using CSS Variables
   {
@@ -35,13 +35,12 @@ const LandingPage: React.FC<LandingPageProps> = () => {
     dispatch({ type: "CHANGE_THEME", payload: theme });
   };
 
-  useEffect(() => {
-    document.documentElement.classList.value = currentTheme;
-  }, [currentTheme]);
-
   return (
     <AnimatedMain className="landing-page">
-      <h1>Hello!</h1>
+      <div className="head">
+        <h1>Hello!</h1>
+        <p>My name is Nishit Dua, and I am a developer</p>
+      </div>
       <div className="theme-container">
         <p>Choose a theme!</p>
         <div className="theme-box">
@@ -55,7 +54,6 @@ const LandingPage: React.FC<LandingPageProps> = () => {
                 style={CSSProps}
                 key={idx}
                 className={`${
-                  // TODO ADD CSS for the active theme
                   currentTheme === theme.themeName ? "theme-active" : ""
                 }`}
                 onClick={() => changeTheme(theme.themeName)}
