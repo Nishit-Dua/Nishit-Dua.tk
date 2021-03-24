@@ -5,7 +5,13 @@ import { Switch } from "react-router-dom";
 import { Navbar } from "./components";
 import { Library } from "./components/Library";
 import { useGlobalContext } from "./context/AppContext";
-import { AboutPage, ContactPage, LandingPage, ProjectsPage } from "./pages";
+import {
+  AboutPage,
+  ContactPage,
+  ErrorPage,
+  LandingPage,
+  ProjectsPage,
+} from "./pages";
 
 // ?Goodbye Sweet Prince :(
 // import { LazyComponentLoader } from "./utils/LazyComponentLoader";
@@ -53,7 +59,6 @@ function App() {
       <Library />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <Route path="/" exact component={LandingPage} />
           {pagesAndRoute.map((item, idx) => {
             return (
               <Route path={item.route} key={idx} exact>
@@ -61,6 +66,7 @@ function App() {
               </Route>
             );
           })}
+          <Route path="/" component={ErrorPage} />
         </Switch>
       </AnimatePresence>
     </>

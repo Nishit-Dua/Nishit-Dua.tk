@@ -1,5 +1,5 @@
-import { Squash as Hamburger } from "hamburger-react";
 import React from "react";
+import { NavButton } from "./NavButton";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/AppContext";
 
@@ -49,14 +49,16 @@ export const Navbar: React.FC<NavbarProps> = () => {
             );
           })}
         </ul>
-        <Hamburger
-          toggled={isLibraryOpen}
-          onToggle={() => {
+        <button
+          className={`menu hamburger-react ${isLibraryOpen ? "opened" : ""}`}
+          onClick={() => {
             dispatch({
               type: "TOGGLE_LIBRARY",
             });
           }}
-        />
+        >
+          <NavButton />
+        </button>
       </div>
     </nav>
   );

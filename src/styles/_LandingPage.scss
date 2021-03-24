@@ -13,9 +13,12 @@
     h1 {
       font-size: 10rem;
       letter-spacing: 5px;
-      text-shadow: 5px 5px var(--heading-shadow-cl1),
-        10px 10px var(--heading-shadow-cl2), 15px 15px var(--heading-shadow-cl3);
-      transition: var(--theme-transition);
+      &.text-shadow {
+        text-shadow: 5px 5px var(--heading-shadow-cl1),
+          10px 10px var(--heading-shadow-cl2),
+          15px 15px var(--heading-shadow-cl3);
+        transition: var(--theme-transition);
+      }
     }
   }
 
@@ -87,8 +90,10 @@
       h1 {
         font-size: 6rem;
         // letter-spacing: 7px;
-        text-shadow: 3px 3px var(--heading-shadow-cl1),
-          7px 7px var(--heading-shadow-cl2), 11px 11px var(--heading-shadow-cl3);
+        &.text-shadow {
+          text-shadow: 3px 3px var(--heading-shadow-cl1),
+            6px 6px var(--heading-shadow-cl2), 9px 9px var(--heading-shadow-cl3);
+        }
       }
     }
     .theme-container {
@@ -114,8 +119,10 @@
   @media screen and (max-width: 500px) {
     h1 {
       font-size: 5rem;
-      text-shadow: 2px 2px var(--heading-shadow-cl1),
-        4px 4px var(--heading-shadow-cl2), 6px 6px var(--heading-shadow-cl3);
+      &.text-shadow {
+        text-shadow: 2px 2px var(--heading-shadow-cl1),
+          4px 4px var(--heading-shadow-cl2), 6px 6px var(--heading-shadow-cl3);
+      }
     }
   }
 }

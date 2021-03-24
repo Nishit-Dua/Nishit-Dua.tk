@@ -34,7 +34,7 @@
 
 :root {
   --theme-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-    text-shadow 0.5s ease;
+    text-shadow 1s ease;
 }
 
 .page {
@@ -80,3 +80,4 @@ button:focus {
 @import "./Library";
 @import "./Navbar";
 @import "./Pages";
+@import "./NavButton";
